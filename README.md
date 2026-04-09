@@ -30,10 +30,14 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 2. Check required pretrained model
+### 2. Download pretrained model
+
+Download the pretrained diffusion model checkpoint from [Google Drive](https://drive.google.com/file/d/1MJzPvwgzx_2rxVc-X3U8qydE6YKk7DlB/view?usp=sharing) and place it in the `pretrained_models/` directory:
 
 ```bash
-ls -lh pretrained_models/model-4.pt
+mkdir -p pretrained_models
+# After downloading, move the file:
+mv ~/Downloads/model-4.pt pretrained_models/
 ```
 
 ### 3. Run a quick OpenFWI example (single sample)
