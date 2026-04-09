@@ -9,7 +9,7 @@
 
 <img src="figures/featured_image.png" alt="RED-DiffEq" width="600">
 
-Accepted in <a href="https://www.nature.com/commsphys"><img src="figures/COMMSPHYS_logo.png" alt="Communications Physics" height="40" style="vertical-align: middle;"></a>
+Accepted in <a href="https://www.nature.com/commsphys"><img src="figures/COMMSPHYS_logo.png" alt="Communications Physics" height="200" style="vertical-align: middle;"></a>
 
 </div>
 
