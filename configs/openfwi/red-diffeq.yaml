@@ -1,0 +1,54 @@
+pde:
+  n_grid: 70
+  nt: 1000
+  dx: 10.0
+  dt: 0.001
+  nbc: 120
+  f: 15.0
+  sz: 10
+  gz: 10
+  ng: 70
+  ns: 5
+model:
+  dim: 64
+  dim_mults:
+  - 1
+  - 2
+  - 4
+  - 8
+  flash_attn: false
+  channels: 1
+diffusion:
+  image_size: 72
+  timesteps: 1000
+  sampling_timesteps: 250
+  objective: pred_noise
+  model_path: pretrained_models/model-4.pt
+optimization:
+  lr: 0.03
+  ts: 300
+  regularization: diffusion
+  reg_lambda: 0.75
+  use_time_weight: false
+  fixed_timestep: null
+  sigma: 10.0
+  sigma_x0: 0.0001
+  initial_type: smoothed
+  noise_std: 0.0
+  noise_type: gaussian
+  missing_number: 0
+data:
+  seismic_data_dir: dataset/OpenFWI/Seismic_Data/
+  velocity_data_dir: dataset/OpenFWI/Velocity_Data/
+  batch_size: 25
+  data_pattern: '*.npy'
+  use_mmap: true
+  openfwi_families: null
+  sample_index: null
+experiment:
+  name: openfwi_model_4
+  results_dir: experiment/
+  save_intermediate: false
+  log_interval: 10
+  save_metrics: true
+  random_seed: 8888

@@ -1,0 +1,53 @@
+# Marmousi TV baseline configuration
+
+pde:
+  n_grid: 190  # Horizontal grid size (width) - matches Marmousi width
+  nt: 1000
+  dx: 10.0
+  dt: 0.001
+  nbc: 120
+  f: 15.0
+  sz: 10
+  gz: 10
+  ng: 190  # Number of receivers - matches number of seismic traces
+  ns: 5
+
+model:
+  dim: 64
+  dim_mults: [1, 2, 4, 8]
+  flash_attn: false
+  channels: 1
+
+diffusion:
+  image_size: 72
+  timesteps: 1000
+  sampling_timesteps: 250
+  objective: pred_noise
+  model_path: pretrained_models/model-4.pt
+
+optimization:
+  lr: 0.03
+  ts: 300
+  regularization: tv
+  reg_lambda: 0.01
+  use_time_weight: false
+  sigma: 20.0
+  initial_type: smoothed
+  noise_std: 0.0
+  noise_type: gaussian
+  missing_number: 0
+
+data:
+  seismic_data_dir: dataset/Marmousi/Seismic_Data/
+  velocity_data_dir: dataset/Marmousi/Velocity_Data/
+  batch_size: 1
+  data_pattern: "*.npy"
+  use_mmap: true
+
+experiment:
+  name: marmousi_tv
+  results_dir: experiment/
+  save_intermediate: false
+  log_interval: 10
+  save_metrics: true
+  random_seed: 8888
