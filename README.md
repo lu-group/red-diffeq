@@ -7,9 +7,9 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<a href="https://www.nature.com/commsphys"><img src="figures/COMMSPHYS_logo.png" alt="Communications Physics" height="60"></a>
-
 <img src="figures/featured_image.png" alt="RED-DiffEq" width="600">
+
+Published in <a href="https://www.nature.com/commsphys"><img src="figures/COMMSPHYS_logo.png" alt="Communications Physics" height="18" style="vertical-align: middle;"></a>
 
 </div>
 
