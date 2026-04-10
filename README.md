@@ -13,13 +13,17 @@
 
 </div>
 
+The data and code for the paper [S. Shan, M. Zhu, Y. Lin, & L. Lu. RED-DiffEq: Regularization by denoising diffusion models for solving inverse PDE problems with application to full waveform inversion. *arXiv preprint arXiv:2509.21659*, 2026](https://arxiv.org/abs/2509.21659).
+
 ## Method Overview
 
 <p align="center">
   <img src="figures/RED-DiffEq.png" alt="RED-DiffEq Method" width="800">
 </p>
 
-## Quick Start (Terminal)
+## Code
+
+### Quick Start (Terminal)
 
 Run all commands from the repository root.
 
@@ -61,7 +65,7 @@ python scripts/run_inversion.py \
   --experiment_name example_marmousi_terminal
 ```
 
-## Full Dataset Runs
+### Full Dataset Runs
 
 Use the configs in `configs/` for full experiments:
 
@@ -80,7 +84,7 @@ python scripts/run_inversion.py --config configs/overthrust/tv.yaml
 python scripts/run_inversion.py --config configs/overthrust/tikhonov.yaml
 ```
 
-## Output
+### Output
 
 Each run writes results to the `experiment.results_dir` path set in the config, under:
 
@@ -109,11 +113,28 @@ Official data-source links and placement instructions are documented in:
 - `dataset/Marmousi/README.md`
 - `dataset/Overthrust/README.md`
 
-## Notes
+### Notes
 
 - Primary entry point: `scripts/run_inversion.py`
 - Current maintained diffusion checkpoint: `pretrained_models/model-4.pt`
 - For reproducibility, set `experiment.random_seed` in your config.
+
+## Cite this work
+
+If you use this data or code for academic research, you are encouraged to cite the following paper:
+
+```
+@article{shan2025red,
+  author  = {Shan, Siming and Zhu, Min and Lin, Youzuo and Lu, Lu},
+  title   = {{RED-DiffEq}: Regularization by denoising diffusion models for solving inverse {PDE} problems with application to full waveform inversion},
+  journal = {arXiv preprint arXiv:2509.21659},
+  year    = {2026}
+}
+```
+
+## Questions
+
+To get help on how to use the data or code, simply open an issue in the GitHub "Issues" section.
 
 ## License
 
