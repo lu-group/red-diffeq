@@ -21,6 +21,18 @@ The data and code for the paper [S. Shan, M. Zhu, Y. Lin, & L. Lu. RED-DiffEq: R
   <img src="figures/RED-DiffEq.png" alt="RED-DiffEq Method" width="800">
 </p>
 
+## Data
+
+Mini example datasets for quick testing are included in this repository under `example/example_dataset/`, which contains small subsets of OpenFWI and Marmousi data (seismic and velocity).
+
+The full datasets can be obtained from the following sources:
+
+- **OpenFWI**: [https://openfwi-lanl.github.io/](https://openfwi-lanl.github.io/) — place files under `dataset/OpenFWI/Seismic_Data/` and `dataset/OpenFWI/Velocity_Data/`
+- **Marmousi**: [https://www.geoazur.fr/WIND/bin/view/Main/Data/WebHome](https://www.geoazur.fr/WIND/bin/view/Main/Data/WebHome) — place files under `dataset/Marmousi/Seismic_Data/` and `dataset/Marmousi/Velocity_Data/`
+- **Overthrust**: [https://www.geoazur.fr/WIND/bin/view/Main/Data/WebHome](https://www.geoazur.fr/WIND/bin/view/Main/Data/WebHome) — place files under `dataset/Overthrust/Seismic_Data/` and `dataset/Overthrust/Velocity_Data/`
+
+See `dataset/README.md` for more details.
+
 ## Code
 
 ### Quick Start (Terminal)
@@ -103,15 +115,6 @@ Each `*_results.npz` typically contains:
 - `ssim`
 - `mae`
 - `rmse`
-
-## Data
-
-Official data-source links and placement instructions are documented in:
-
-- `dataset/README.md`
-- `dataset/OpenFWI/README.md`
-- `dataset/Marmousi/README.md`
-- `dataset/Overthrust/README.md`
 
 ### Notes
 
