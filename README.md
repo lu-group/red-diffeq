@@ -18,7 +18,7 @@ The data and code for the paper [S. Shan, M. Zhu, Y. Lin, & L. Lu. RED-DiffEq: R
 ## Method Overview
 
 <p align="center">
-  <img src="figures/RED-DiffEq.svg" alt="RED-DiffEq Method" width="800">
+  <img src="figures/RED-DiffEq.png" alt="RED-DiffEq Method" width="800">
 </p>
 
 ## Data
