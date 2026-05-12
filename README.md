@@ -13,7 +13,7 @@
 
 </div>
 
-The data and code for the paper [S. Shan, M. Zhu, Y. Lin, & L. Lu. RED-DiffEq: Regularization by denoising diffusion models for solving inverse PDE problems with application to full waveform inversion. *arXiv preprint arXiv:2509.21659*, 2026](https://arxiv.org/abs/2509.21659).
+The data and code for the paper [Shan, S., Zhu, M., Lin, Y. et al. Regularization by denoising diffusion models for solving inverse PDE problems with application to full waveform inversion. *Commun Phys* (2026)](https://doi.org/10.1038/s42005-026-02677-6).
 
 ## Method Overview
 
@@ -127,11 +127,12 @@ Each `*_results.npz` typically contains:
 If you use this data or code for academic research, you are encouraged to cite the following paper:
 
 ```
-@article{shan2025red,
+@article{shan2026regularization,
   author  = {Shan, Siming and Zhu, Min and Lin, Youzuo and Lu, Lu},
-  title   = {{RED-DiffEq}: Regularization by denoising diffusion models for solving inverse {PDE} problems with application to full waveform inversion},
-  journal = {arXiv preprint arXiv:2509.21659},
-  year    = {2026}
+  title   = {Regularization by denoising diffusion models for solving inverse {PDE} problems with application to full waveform inversion},
+  journal = {Communications Physics},
+  year    = {2026},
+  doi     = {10.1038/s42005-026-02677-6}
 }
 ```
 
